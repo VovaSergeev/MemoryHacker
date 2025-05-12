@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fun1"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Очивки"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="373dp"
+        android:layout_height="399dp"
+
+        android:useDefaultMargins="true" />
+
+    <TextView
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Рекорды"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/white"
+        android:paddingBottom="8dp"
+        android:textColorHint="@color/white"
+        android:textColor="@android:color/white"
+        android:hint="Введите время" />
+
+    <Spinner
+        android:id="@+id/difficultySpinner"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@android:color/white"
+        android:paddingBottom="8dp"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/getResultButton"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:background="@drawable/grey"
+        android:text="Получить результат"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@null" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+</LinearLayout>

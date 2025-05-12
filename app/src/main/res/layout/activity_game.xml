@@ -1,0 +1,206 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/fun1"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Запомни!"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+
+
+        <ImageView
+            android:id="@+id/countGallery"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите число"
+            android:backgroundTint="@android:color/white"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/countCamera"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+
+            android:src="@android:drawable/ic_menu_camera"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите число"
+            android:backgroundTint="@android:color/white"
+            android:paddingBottom="8dp"
+            android:textColorHint="@color/white"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/countManage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:singleLine="true"
+            android:src="@android:drawable/ic_menu_manage"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите число"
+            android:backgroundTint="@android:color/white"
+            android:paddingBottom="8dp"
+            android:textColorHint="@color/white"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/countShare"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:singleLine="true"
+            android:src="@android:drawable/ic_menu_share"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите число"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@android:color/white"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/countCall"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@android:drawable/ic_menu_call"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите число"
+            android:backgroundTint="@android:color/white"
+            android:paddingBottom="8dp"
+            android:textColorHint="@color/white"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/countCompass"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@android:drawable/ic_menu_compass"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите число"
+            android:textColorHint="@color/white"
+            android:singleLine="true"
+            android:backgroundTint="@android:color/white"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:visibility="gone" />
+        <Button
+            android:layout_width="389dp"
+            android:layout_height="54dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/grey"
+            android:hint="Проверить"
+            android:id="@+id/botoon1"
+            android:visibility="gone"/>
+
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="375dp"
+            android:layout_height="386dp"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:useDefaultMargins="true" />
+
+        <Button
+            android:id="@+id/button_go"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+
+            android:background="@drawable/grey"
+            android:text="Изменить параметры "
+            app:backgroundTint="@null" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/adContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/dogAdImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="Реклама собак"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dg_ad" />
+
+        <ImageButton
+            android:id="@+id/closeAdButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp"
+            android:background="@color/black"
+            android:contentDescription="Закрыть рекламу"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </RelativeLayout>
+
+</FrameLayout>
