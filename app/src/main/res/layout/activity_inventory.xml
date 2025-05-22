@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/fun1"
+
+    tools:context=".InventoryActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Инвентарь"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:id="@+id/skinListLayout"
+        android:layout_width="401dp"
+        android:layout_height="448dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <Button
+        android:id="@+id/useSkinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/grey"
+        android:enabled="false"
+
+        android:text="Применить скин"
+        android:textColor="@color/white"
+        app:backgroundTint="@null" />
+    <Button
+
+        android:id="@+id/back1"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/grey"
+        android:text="Назад"
+        android:textColor="@color/white"
+        app:backgroundTint="@null" />
+
+
+</LinearLayout>

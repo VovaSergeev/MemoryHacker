@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="difficulties_array">
+        <item>Легкий</item>
+        <item>Средний</item>
+        <item>Сложный</item>
+    </string-array>
+</resources>
